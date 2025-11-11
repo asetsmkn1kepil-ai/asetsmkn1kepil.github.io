@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Barang Inventaris Sekolah SMK N 1 Kepil</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(160deg, #0a192f, #112240, #1b2a4a);
+      color: #e6f1ff;
+      font-family: 'Poppins', sans-serif;
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 400px;
+      margin: 30px auto;
+      background: rgba(17, 34, 64, 0.9);
+      border: 1px solid rgba(0, 255, 255, 0.2);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    }
+
+    .card img {
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    h5.card-title {
+      text-align: center;
+      color: #00ffff;
+      font-weight: 600;
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    table {
+      font-size: 0.9rem;
+      color: #e6f1ff;
+      border: 1px solid rgba(0,255,255,0.2);
+    }
+
+    th {
+      width: 45%;
+      color: #00ffff;
+      background-color: rgba(0, 255, 255, 0.05);
+      border: 1px solid rgba(0,255,255,0.15);
+    }
+
+    td {
+      border: 1px solid rgba(0,255,255,0.1);
+      background-color: rgba(255,255,255,0.02);
+    }
+
+    .btn-pdf {
+      background-color: #00ffff;
+      color: #001f3f;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      padding: 6px 14px;
+      margin-top: 10px;
+    }
+
+    .btn-pdf:hover {
+      background-color: #00b3b3;
+      color: white;
+    }
+
+    @media print {
+      .btn-pdf {
+        display: none;
+      }
+      body {
+        background: #fff;
+        color: #000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Foto Barang" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Data Barang Inventaris Sekolah</h5>
+      <table class="table table-bordered mt-3 mb-2">
+        <tr><th>Nama Barang</th><td>Laptop Lenovo ThinkPad E14</td></tr>
+        <tr><th>Merk</th><td>Lenovo</td></tr>
+        <tr><th>Tahun</th><td>2023</td></tr>
+        <tr><th>Kode Barang</th><td>INV-2023-001</td></tr>
+        <tr><th>Register</th><td>001/IT/2023</td></tr>
+        <tr><th>Harga</th><td>Rp 12.500.000</td></tr>
+        <tr><th>Keadaan</th><td>Baik</td></tr>
+        <tr><th>Asal</th><td>Pengadaan Sekolah</td></tr>
+        <tr><th>Serial</th><td>SN-LNV-3456ABC789</td></tr>
+        <tr><th>Berada di</th><td>Ruang Lab Komputer</td></tr>
+      </table>
+      <div class="text-center">
+        <button class="btn btn-pdf" onclick="window.print()">Simpan PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
